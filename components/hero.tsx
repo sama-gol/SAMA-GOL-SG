@@ -91,7 +91,7 @@ export function Hero() {
           <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#5a0c0c]
             CREATION
           </span>
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-light text-[#6b2a2a]
+          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-light text-[#b6b6b5]
             WITHOUT
           </span>
           <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#5a0c0c]
