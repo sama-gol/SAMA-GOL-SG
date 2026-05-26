@@ -175,7 +175,7 @@ export function About() {
               {/* Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
 
-                {/* Extra glow behind logo */}
+                {/* Extra glow */}
                 <div
                   className="absolute w-[280px] h-[280px] rounded-full opacity-50"
                   style={{
@@ -186,7 +186,7 @@ export function About() {
                 />
 
                 <img
-                  src="/sg-logo.png"
+                  src="./sg-logo.png"
                   alt="SAMA/GOL Logo"
                   className="
                     relative z-10
@@ -194,6 +194,8 @@ export function About() {
                     md:w-[300px]
                     lg:w-[360px]
                     object-contain
+                    select-none
+                    pointer-events-none
                     drop-shadow-[0_0_45px_rgba(255,50,50,0.22)]
                   "
                 />
