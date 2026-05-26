@@ -34,30 +34,30 @@ export function About() {
             className="relative z-10"
           >
             <span 
-              className="mb-6 block text-[10px] font-medium uppercase tracking-[0.4em] text-[#6a2b21]"
+              className="mb-6 block text-[10px] font-medium uppercase tracking-[0.4em] text-[#7a1111]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Our Philosophy
             </span>
             <h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-[1.15] tracking-[-0.02em] text-[#f5f5f0]"
+              className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-[1.15] tracking-[-0.02em] text-[#5a0c0c]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Redefining
               <br />
               Streetwear
               <br />
-              <span className="text-[#6b6b65]">Luxury</span>
+              <span className="text-[#7a1111]">Luxury</span>
             </h2>
             <div className="mt-8 md:mt-10 space-y-5 max-w-md">
               <p 
-                className="text-sm font-light leading-[1.9] text-[#6b6b65]"
+                className="text-sm font-light leading-[1.9] text-[#7a1111]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 SAMA/GOL emerges from the shadows where high fashion meets street culture. We craft garments that speak to the fearless—those who refuse to conform to conventional aesthetics.
               </p>
               <p 
-                className="text-sm font-light leading-[1.9] text-[#6b6b65]"
+                className="text-sm font-light leading-[1.9] text-[#7a1111]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 Each piece is meticulously designed with premium materials, featuring our signature dark palette and architectural silhouettes that define the modern streetwear connoisseur.
@@ -75,13 +75,13 @@ export function About() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <span 
-                    className="block text-3xl md:text-4xl font-semibold text-[#f5f5f0]"
+                    className="block text-3xl md:text-4xl font-semibold text-[#5a0c0c]"
                     style={{ fontFamily: "var(--font-montserrat)" }}
                   >
                     {stat.value}
                   </span>
                   <span 
-                    className="mt-1 block text-[9px] font-medium uppercase tracking-[0.25em] text-[#6b6b65]"
+                    className="mt-1 block text-[9px] font-medium uppercase tracking-[0.25em] text-[#7a1111]"
                     style={{ fontFamily: "var(--font-montserrat)" }}
                   >
                     {stat.label}
