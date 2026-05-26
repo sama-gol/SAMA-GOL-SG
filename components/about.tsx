@@ -153,12 +153,37 @@ export function About() {
                   "0 40px 120px -25px rgba(0,0,0,0.95)",
               }}
             >
-              {/* Strong cinematic glow */}
+              {/* LOGO FULL COVER */}
+              <img
+                src="/sg-logo.png"
+                alt="SAMA/GOL Logo"
+                className="
+                  absolute inset-0
+                  w-full
+                  h-full
+                  object-cover
+                  scale-[1.15]
+                  select-none
+                  pointer-events-none
+                "
+              />
+
+              {/* Dark overlay cinematic */}
               <div
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(circle at center, rgba(255,60,60,0.18) 0%, transparent 72%)",
+                    "linear-gradient(to bottom, rgba(0,0,0,0.18), rgba(0,0,0,0.22))",
+                }}
+              />
+
+              {/* Red cinematic glow */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "radial-gradient(circle at center, rgba(255,40,40,0.22) 0%, transparent 72%)",
+                  mixBlendMode: "screen",
                 }}
               />
 
@@ -171,35 +196,6 @@ export function About() {
                   backgroundSize: "8px 8px",
                 }}
               />
-
-              {/* FULL SIZE LOGO */}
-              <div className="absolute inset-0 flex items-center justify-center p-2">
-
-                {/* Glow behind logo */}
-                <div
-                  className="absolute w-[700px] h-[700px] rounded-full opacity-80"
-                  style={{
-                    background:
-                      "radial-gradient(circle, rgba(255,40,40,0.38) 0%, transparent 70%)",
-                    filter: "blur(140px)",
-                  }}
-                />
-
-                <img
-                  src="/sg-logo.png"
-                  alt="SAMA/GOL Logo"
-                  className="
-                    relative z-10
-                    w-full
-                    h-full
-                    object-contain
-                    select-none
-                    pointer-events-none
-                    scale-[1.28]
-                    drop-shadow-[0_0_100px_rgba(255,50,50,0.45)]
-                  "
-                />
-              </div>
 
               {/* Decorative accents */}
               <div className="absolute left-8 top-8 h-[2px] w-24 bg-gradient-to-r from-[#ff4b4b] to-transparent rounded-full" />
