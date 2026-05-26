@@ -19,10 +19,10 @@ export function About() {
 
       {/* Cinematic glow */}
       <div
-        className="absolute right-1/4 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-[0.14]"
+        className="absolute right-1/4 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-[0.16]"
         style={{
           background:
-            "radial-gradient(circle, rgba(193,43,43,0.22) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(255,45,45,0.28) 0%, transparent 70%)",
           filter: "blur(140px)",
         }}
       />
@@ -49,7 +49,7 @@ export function About() {
             className="relative z-10"
           >
             <span
-              className="mb-6 block text-[10px] font-medium uppercase tracking-[0.45em] text-[#c12b2b]"
+              className="mb-6 block text-[10px] font-medium uppercase tracking-[0.45em] text-[#ff4b4b]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               OUR PHILOSOPHY
@@ -66,9 +66,9 @@ export function About() {
               <br />
 
               <span
-                className="text-[#d63a3a]"
+                className="text-[#ff4b4b]"
                 style={{
-                  textShadow: "0 0 25px rgba(214,58,58,0.14)",
+                  textShadow: "0 0 30px rgba(255,75,75,0.22)",
                 }}
               >
                 Streetwear
@@ -83,7 +83,7 @@ export function About() {
 
             <div className="mt-10 md:mt-12 space-y-6 max-w-xl">
               <p
-                className="text-[15px] md:text-base font-light leading-[2] text-[#cfcfc9]"
+                className="text-[15px] md:text-base font-light leading-[2] text-[#e2e2dc]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 SAMA/GOL emerges from the shadows where high fashion meets
@@ -92,7 +92,7 @@ export function About() {
               </p>
 
               <p
-                className="text-[15px] md:text-base font-light leading-[2] text-[#9f9f98]"
+                className="text-[15px] md:text-base font-light leading-[2] text-[#b3b3ac]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 Each piece is meticulously designed with premium materials,
@@ -122,7 +122,7 @@ export function About() {
                   </span>
 
                   <span
-                    className="mt-2 block text-[10px] font-medium uppercase tracking-[0.3em] text-[#c12b2b]"
+                    className="mt-2 block text-[10px] font-medium uppercase tracking-[0.3em] text-[#ff4b4b]"
                     style={{ fontFamily: "var(--font-montserrat)" }}
                   >
                     {stat.label}
@@ -145,20 +145,20 @@ export function About() {
             className="relative"
           >
             <div
-              className="relative aspect-[4/5] rounded-[32px] overflow-hidden border border-[#1a1a1a]"
+              className="relative aspect-[4/5] rounded-[32px] overflow-hidden border border-[#1f1f1f]"
               style={{
                 background:
-                  "linear-gradient(180deg, #101010 0%, #080808 100%)",
+                  "linear-gradient(180deg, #111111 0%, #080808 100%)",
                 boxShadow:
-                  "0 40px 100px -30px rgba(0,0,0,0.95)",
+                  "0 40px 120px -25px rgba(0,0,0,0.95)",
               }}
             >
-              {/* Inner glow */}
+              {/* Strong cinematic glow */}
               <div
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(circle at center, rgba(214,58,58,0.12) 0%, transparent 70%)",
+                    "radial-gradient(circle at center, rgba(255,60,60,0.16) 0%, transparent 72%)",
                 }}
               />
 
@@ -172,23 +172,37 @@ export function About() {
                 }}
               />
 
-              {/* Brand mark */}
+              {/* Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <span
-                  className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-[#d63a3a]"
+
+                {/* Extra glow behind logo */}
+                <div
+                  className="absolute w-[280px] h-[280px] rounded-full opacity-50"
                   style={{
-                    fontFamily: "var(--font-montserrat)",
-                    textShadow: "0 0 35px rgba(214,58,58,0.16)",
+                    background:
+                      "radial-gradient(circle, rgba(255,40,40,0.28) 0%, transparent 70%)",
+                    filter: "blur(70px)",
                   }}
-                >
-                  S/G
-                </span>
+                />
+
+                <img
+                  src="/sg-logo.png"
+                  alt="SAMA/GOL Logo"
+                  className="
+                    relative z-10
+                    w-[230px]
+                    md:w-[300px]
+                    lg:w-[360px]
+                    object-contain
+                    drop-shadow-[0_0_45px_rgba(255,50,50,0.22)]
+                  "
+                />
               </div>
 
               {/* Decorative accents */}
-              <div className="absolute left-8 top-8 h-[2px] w-20 bg-gradient-to-r from-[#d63a3a] to-transparent rounded-full" />
+              <div className="absolute left-8 top-8 h-[2px] w-24 bg-gradient-to-r from-[#ff4b4b] to-transparent rounded-full" />
 
-              <div className="absolute bottom-8 right-8 h-[2px] w-20 bg-gradient-to-l from-[#d63a3a] to-transparent rounded-full" />
+              <div className="absolute bottom-8 right-8 h-[2px] w-24 bg-gradient-to-l from-[#ff4b4b] to-transparent rounded-full" />
             </div>
           </motion.div>
 
