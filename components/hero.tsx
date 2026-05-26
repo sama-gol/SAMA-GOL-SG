@@ -86,7 +86,7 @@ export function Hero() {
           className="leading-[0.95] tracking-[-0.03em]"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#f5f5f0]">
+          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#5a0c0c]">
             CREATION
           </span>
 
