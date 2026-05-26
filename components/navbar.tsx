@@ -56,7 +56,7 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="group relative text-[11px] font-medium uppercase tracking-[0.25em] text-[#a8a8a0] transition-colors duration-300 hover:text-[#f5f5f0]"
+                className="group relative text-[11px] font-medium uppercase tracking-[0.25em] text-[#a8a8a0] transition-colors duration-300 hover:text-[#5a0c0c]"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#6a2b21] transition-all duration-500 group-hover:w-full" />
@@ -72,7 +72,7 @@ export function Navbar() {
               className="flex flex-col items-center"
             >
               <span 
-                className="text-lg md:text-xl font-semibold tracking-[0.35em] text-[#f5f5f0]"
+                className="text-lg md:text-xl font-semibold tracking-[0.35em] text-[#5a0c0c]"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 SAMA/GOL
@@ -86,7 +86,7 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="group relative text-[11px] font-medium uppercase tracking-[0.25em] text-[#a8a8a0] transition-colors duration-300 hover:text-[#f5f5f0]"
+                className="group relative text-[11px] font-medium uppercase tracking-[0.25em] text-[#a8a8a0] transition-colors duration-300 hover:text-[#5a0c0c]"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#6a2b21] transition-all duration-500 group-hover:w-full" />
@@ -97,17 +97,17 @@ export function Navbar() {
           {/* Icons */}
           <div className="flex items-center gap-5">
             <button
-              className="text-[#a8a8a0] transition-colors duration-300 hover:text-[#f5f5f0] hidden md:block"
+              className="text-[#a8a8a0] transition-colors duration-300 hover:text-[#5a0c0c] hidden md:block"
               aria-label="Search"
             >
               <Search className="h-[18px] w-[18px]" strokeWidth={1.5} />
             </button>
             <button
-              className="relative text-[#a8a8a0] transition-colors duration-300 hover:text-[#f5f5f0]"
+              className="relative text-[#a8a8a0] transition-colors duration-300 hover:text-[#5a0c0c]"
               aria-label="Shopping bag"
             >
               <ShoppingBag className="h-[18px] w-[18px]" strokeWidth={1.5} />
-              <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#3b1813] text-[9px] font-medium text-[#f5f5f0]">
+              <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#3b1813] text-[9px] font-medium text-[#7a1111]">
                 0
               </span>
             </button>
@@ -137,7 +137,7 @@ export function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-2xl font-medium uppercase tracking-[0.3em] text-[#f5f5f0] transition-colors hover:text-[#6a2b21]"
+                    className="text-2xl font-medium uppercase tracking-[0.3em] text-[#f5f5f0] transition-colors hover:text-[#7a1111]"
                     style={{ fontFamily: "var(--font-montserrat)" }}
                   >
                     {link.name}
@@ -153,7 +153,7 @@ export function Navbar() {
                 transition={{ delay: 0.5, duration: 0.5 }}
                 className="absolute bottom-12 left-0 right-0 text-center"
               >
-                <p className="text-[10px] font-light uppercase tracking-[0.3em] text-[#6b6b65]">
+                <p className="text-[10px] font-light uppercase tracking-[0.3em] text-[#7a1111]">
                   contact@samagol.com
                 </p>
               </motion.div>
