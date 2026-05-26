@@ -24,11 +24,11 @@ export function Hero() {
         backgroundImage: `
           linear-gradient(
             45deg,
-            rgba(255,255,255,0.04) 25%,
+            rgba(255,255,255,0.055) 25%,
             transparent 25%,
             transparent 50%,
-            rgba(255,255,255,0.04) 50%,
-            rgba(255,255,255,0.04) 75%,
+            rgba(255,255,255,0.055) 50%,
+            rgba(255,255,255,0.055) 75%,
             transparent 75%,
             transparent
           ),
@@ -45,16 +45,16 @@ export function Hero() {
           )
         `,
 
-        backgroundSize: "80px 80px",
-        backgroundPosition: "0 0, 40px 40px",
+        backgroundSize: "42px 42px",
+        backgroundPosition: "0 0, 21px 21px",
       }}
     >
-      {/* Overlay oscuro */}
+      {/* Overlay cinematográfico suave */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.55))",
+            "linear-gradient(to bottom, rgba(0,0,0,0.18), rgba(0,0,0,0.28))",
         }}
       />
 
@@ -70,6 +70,7 @@ export function Hero() {
         style={{ y, opacity }}
         className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 text-center"
       >
+        {/* Pretítulo */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -77,19 +78,20 @@ export function Hero() {
           className="mb-8 md:mb-10"
         >
           <span className="inline-flex items-center gap-4">
-            <span className="h-[1px] w-8 md:w-12 bg-gradient-to-r from-transparent to-[#3b1813]" />
+            <span className="h-[1px] w-8 md:w-12 bg-gradient-to-r from-transparent to-[#5a0c0c]" />
 
             <span
               className="text-[10px] md:text-[11px] font-medium uppercase tracking-[0.4em] text-[#7a1111]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              ROPA URBANA DE PRIMERA CALIDAD
+              PREMIUM STREETWEAR
             </span>
 
-            <span className="h-[1px] w-8 md:w-12 bg-gradient-to-l from-transparent to-[#3b1813]" />
+            <span className="h-[1px] w-8 md:w-12 bg-gradient-to-l from-transparent to-[#5a0c0c]" />
           </span>
         </motion.div>
 
+        {/* Título principal */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -101,30 +103,4 @@ export function Hero() {
           className="leading-[0.95] tracking-[-0.03em]"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#7a1111]">
-            CREACIÓN
-          </span>
-
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-light text-[#8a1a1a] mt-1">
-            SIN
-          </span>
-
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#7a1111] mt-1">
-            LIMITACIÓN
-          </span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="mx-auto mt-10 md:mt-14 max-w-md text-sm md:text-base font-light leading-[1.8] text-[#8a1a1a] tracking-wide"
-          style={{ fontFamily: "var(--font-poppins)" }}
-        >
-          Donde la estética cinematográfica se encuentra con la moda más audaz.
-          Diseñada para quienes se niegan a pasar desapercibidos.
-        </motion.p>
-      </motion.div>
-    </section>
-  );
-}
+          <
