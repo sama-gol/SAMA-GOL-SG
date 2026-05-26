@@ -12,23 +12,33 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#050505] py-24 md:py-36"
+      className="relative overflow-hidden bg-[#070707] py-24 md:py-36"
     >
-      {/* Background accent */}
-      <div className="absolute right-0 top-0 h-full w-1/2 bg-[#080808] hidden lg:block" />
+      {/* Background split */}
+      <div className="absolute right-0 top-0 h-full w-1/2 bg-[#0b0b0b] hidden lg:block" />
 
-      {/* Mahogany glow */}
+      {/* Cinematic glow */}
       <div
-        className="absolute right-1/4 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-[0.08]"
+        className="absolute right-1/4 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-[0.14]"
         style={{
           background:
-            "radial-gradient(circle, #2a0808 0%, transparent 65%)",
-          filter: "blur(120px)",
+            "radial-gradient(circle, rgba(193,43,43,0.22) 0%, transparent 70%)",
+          filter: "blur(140px)",
+        }}
+      />
+
+      {/* Noise texture */}
+      <div
+        className="absolute inset-0 opacity-[0.025]"
+        style={{
+          backgroundImage:
+            "radial-gradient(rgba(255,255,255,0.15) 0.6px, transparent 0.6px)",
+          backgroundSize: "7px 7px",
         }}
       />
 
       <div className="relative mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+        <div className="grid items-center gap-20 lg:grid-cols-2">
 
           {/* Left Content */}
           <motion.div
@@ -39,28 +49,41 @@ export function About() {
             className="relative z-10"
           >
             <span
-              className="mb-6 block text-[10px] font-medium uppercase tracking-[0.4em] text-[#5a0c0c]"
+              className="mb-6 block text-[10px] font-medium uppercase tracking-[0.45em] text-[#c12b2b]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              Our Philosophy
+              OUR PHILOSOPHY
             </span>
 
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-[1.15] tracking-[-0.02em] text-[#5a0c0c]"
+              className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] tracking-[-0.03em]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              Redefining
+              <span className="text-[#f5f5f0]">
+                Redefining
+              </span>
+
               <br />
-              Streetwear
+
+              <span
+                className="text-[#d63a3a]"
+                style={{
+                  textShadow: "0 0 25px rgba(214,58,58,0.14)",
+                }}
+              >
+                Streetwear
+              </span>
+
               <br />
-              <span className="text-[#7a1111]">
+
+              <span className="text-[#f5f5f0]">
                 Luxury
               </span>
             </h2>
 
-            <div className="mt-8 md:mt-10 space-y-5 max-w-md">
+            <div className="mt-10 md:mt-12 space-y-6 max-w-xl">
               <p
-                className="text-sm font-light leading-[1.9] text-[#7a1111]"
+                className="text-[15px] md:text-base font-light leading-[2] text-[#cfcfc9]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 SAMA/GOL emerges from the shadows where high fashion meets
@@ -69,7 +92,7 @@ export function About() {
               </p>
 
               <p
-                className="text-sm font-light leading-[1.9] text-[#7a1111]"
+                className="text-[15px] md:text-base font-light leading-[2] text-[#9f9f98]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 Each piece is meticulously designed with premium materials,
@@ -79,7 +102,7 @@ export function About() {
             </div>
 
             {/* Stats */}
-            <div className="mt-12 md:mt-16 flex flex-wrap gap-10 md:gap-14">
+            <div className="mt-14 md:mt-16 flex flex-wrap gap-10 md:gap-16">
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -92,14 +115,14 @@ export function About() {
                   }}
                 >
                   <span
-                    className="block text-3xl md:text-4xl font-semibold text-[#5a0c0c]"
+                    className="block text-4xl md:text-5xl font-semibold text-[#f5f5f0]"
                     style={{ fontFamily: "var(--font-montserrat)" }}
                   >
                     {stat.value}
                   </span>
 
                   <span
-                    className="mt-1 block text-[9px] font-medium uppercase tracking-[0.25em] text-[#7a1111]"
+                    className="mt-2 block text-[10px] font-medium uppercase tracking-[0.3em] text-[#c12b2b]"
                     style={{ fontFamily: "var(--font-montserrat)" }}
                   >
                     {stat.label}
@@ -122,34 +145,50 @@ export function About() {
             className="relative"
           >
             <div
-              className="relative aspect-[4/5] bg-[#0a0a0a] rounded-[28px] flex items-center justify-center overflow-hidden border border-[#111111]"
+              className="relative aspect-[4/5] rounded-[32px] overflow-hidden border border-[#1a1a1a]"
               style={{
+                background:
+                  "linear-gradient(180deg, #101010 0%, #080808 100%)",
                 boxShadow:
-                  "0 25px 60px -20px rgba(0,0,0,0.85)",
+                  "0 40px 100px -30px rgba(0,0,0,0.95)",
               }}
             >
-              {/* Inner texture */}
+              {/* Inner glow */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "radial-gradient(circle at center, rgba(214,58,58,0.12) 0%, transparent 70%)",
+                }}
+              />
+
+              {/* Texture */}
               <div
                 className="absolute inset-0 opacity-[0.03]"
                 style={{
                   backgroundImage:
-                    "radial-gradient(#ffffff 0.5px, transparent 0.5px)",
-                  backgroundSize: "6px 6px",
+                    "radial-gradient(rgba(255,255,255,0.3) 0.6px, transparent 0.6px)",
+                  backgroundSize: "8px 8px",
                 }}
               />
 
               {/* Brand mark */}
-              <span
-                className="relative z-10 text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-[#1a0707]"
-                style={{ fontFamily: "var(--font-montserrat)" }}
-              >
-                S/G
-              </span>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span
+                  className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-[#d63a3a]"
+                  style={{
+                    fontFamily: "var(--font-montserrat)",
+                    textShadow: "0 0 35px rgba(214,58,58,0.16)",
+                  }}
+                >
+                  S/G
+                </span>
+              </div>
 
               {/* Decorative accents */}
-              <div className="absolute -left-3 top-10 h-20 w-[2px] bg-gradient-to-b from-[#5a0c0c] to-transparent rounded-full" />
+              <div className="absolute left-8 top-8 h-[2px] w-20 bg-gradient-to-r from-[#d63a3a] to-transparent rounded-full" />
 
-              <div className="absolute -bottom-3 right-10 h-[2px] w-20 bg-gradient-to-r from-[#5a0c0c] to-transparent rounded-full" />
+              <div className="absolute bottom-8 right-8 h-[2px] w-20 bg-gradient-to-l from-[#d63a3a] to-transparent rounded-full" />
             </div>
           </motion.div>
 
