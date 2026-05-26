@@ -17,40 +17,55 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020202]"
-    >
-      <div className="absolute inset-0 opacity-[0.03]" />
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundColor: "#050505",
 
+        backgroundImage: `
+          linear-gradient(
+            45deg,
+            rgba(255,255,255,0.04) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255,255,255,0.04) 50%,
+            rgba(255,255,255,0.04) 75%,
+            transparent 75%,
+            transparent
+          ),
+
+          linear-gradient(
+            -45deg,
+            rgba(255,255,255,0.03) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255,255,255,0.03) 50%,
+            rgba(255,255,255,0.03) 75%,
+            transparent 75%,
+            transparent
+          )
+        `,
+
+        backgroundSize: "80px 80px",
+        backgroundPosition: "0 0, 40px 40px",
+      }}
+    >
+      {/* Overlay oscuro */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.55))",
+        }}
+      />
+
+      {/* Gradientes superior/inferior */}
       <div className="absolute inset-0">
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#020202] to-transparent" />
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.15 }}
-          transition={{ duration: 2, delay: 0.5 }}
-          className="absolute right-0 top-1/3 w-[500px] h-[500px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, #3b1813 0%, transparent 70%)",
-            filter: "blur(100px)",
-          }}
-        />
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.08 }}
-          transition={{ duration: 2, delay: 1 }}
-          className="absolute left-0 bottom-1/4 w-[400px] h-[400px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, #522019 0%, transparent 70%)",
-            filter: "blur(120px)",
-          }}
-        />
 
         <div className="absolute inset-x-0 bottom-0 h-60 bg-gradient-to-t from-[#020202] to-transparent" />
       </div>
 
+      {/* Contenido */}
       <motion.div
         style={{ y, opacity }}
         className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 text-center"
@@ -68,7 +83,7 @@ export function Hero() {
               className="text-[10px] md:text-[11px] font-medium uppercase tracking-[0.4em] text-[#7a1111]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              Premium Streetwear
+              ROPA URBANA DE PRIMERA CALIDAD
             </span>
 
             <span className="h-[1px] w-8 md:w-12 bg-gradient-to-l from-transparent to-[#3b1813]" />
@@ -86,16 +101,16 @@ export function Hero() {
           className="leading-[0.95] tracking-[-0.03em]"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#5a0c0c]">
-            CREATION
+          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#7a1111]">
+            CREACIÓN
           </span>
 
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-light text-[#7a1111] mt-1">
-            WITHOUT
+          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-light text-[#8a1a1a] mt-1">
+            SIN
           </span>
 
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#5a0c0c] mt-1">
-            LIMITATION
+          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#7a1111] mt-1">
+            LIMITACIÓN
           </span>
         </motion.h1>
 
@@ -103,11 +118,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="mx-auto mt-10 md:mt-14 max-w-md text-sm md:text-base font-light leading-[1.8] text-[#7a1111] tracking-wide"
+          className="mx-auto mt-10 md:mt-14 max-w-md text-sm md:text-base font-light leading-[1.8] text-[#8a1a1a] tracking-wide"
           style={{ fontFamily: "var(--font-poppins)" }}
         >
-          Where cinematic aesthetics meet fearless fashion.
-          Crafted for those who refuse to blend in.
+          Donde la estética cinematográfica se encuentra con la moda más audaz.
+          Diseñada para quienes se niegan a pasar desapercibidos.
         </motion.p>
       </motion.div>
     </section>
