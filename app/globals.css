@@ -223,31 +223,3 @@
     transform: translateY(-8px);
   }
 }
-body {
-  background-color: #050505;
-
-  background-image:
-    linear-gradient(
-      45deg,
-      rgba(255,255,255,0.04) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255,255,255,0.04) 50%,
-      rgba(255,255,255,0.04) 75%,
-      transparent 75%,
-      transparent
-    ),
-    linear-gradient(
-      -45deg,
-      rgba(255,255,255,0.03) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255,255,255,0.03) 50%,
-      rgba(255,255,255,0.03) 75%,
-      transparent 75%,
-      transparent
-    );
-
-  background-size: 80px 80px;
-  background-position: 0 0, 40px 40px;
-}
