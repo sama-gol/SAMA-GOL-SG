@@ -65,7 +65,7 @@ export function Hero() {
             <span className="h-[1px] w-8 md:w-12 bg-gradient-to-r from-transparent to-[#3b1813]" />
 
             <span
-              className="text-[10px] md:text-[11px] font-medium uppercase tracking-[0.4em] text-[#6b6b65]"
+              className="text-[10px] md:text-[11px] font-medium uppercase tracking-[0.4em] text-[#7a1111]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Premium Streetwear
@@ -94,7 +94,7 @@ export function Hero() {
             WITHOUT
           </span>
 
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#f5f5f0] mt-1">
+          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-semibold text-[#5a0c0c] mt-1">
             LIMITATION
           </span>
         </motion.h1>
