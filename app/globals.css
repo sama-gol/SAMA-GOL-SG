@@ -4,251 +4,107 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* SAMA/GOL Ultra Matte Black Luxury Theme */
-  --background: #020202;
-  --foreground: #f5f5f0;
-  
-  /* Matte blacks */
-  --matte-black: #0a0a0a;
-  --charcoal: #111111;
-  --obsidian: #080808;
-  
-  /* Dark mahogany palette */
-  --mahogany: #3b1813;
-  --mahogany-mid: #522019;
-  --mahogany-light: #6a2b21;
-  
-  /* Cream/off-white for buttons */
-  --cream: #f5f0e8;
-  --cream-dark: #e8e3db;
-  
-  /* Smoke grays */
-  --smoke: #a8a8a0;
-  --smoke-dark: #6b6b65;
-  
-  /* Card colors */
-  --card: #0d0d0d;
-  --card-foreground: #f5f5f0;
-  --popover: #0a0a0a;
-  --popover-foreground: #f5f5f0;
-  
-  /* UI colors */
-  --primary: #f5f0e8;
-  --primary-foreground: #020202;
-  --secondary: #151515;
-  --secondary-foreground: #a8a8a0;
-  --muted: #1a1a1a;
-  --muted-foreground: #6b6b65;
-  --accent: #3b1813;
-  --accent-foreground: #f5f5f0;
-  --destructive: #6a2b21;
-  --destructive-foreground: #f5f5f0;
-  --border: #1f1f1f;
-  --input: #151515;
-  --ring: #522019;
-  
-  --radius: 1.75rem;
-  
-  --sidebar: #0a0a0a;
-  --sidebar-foreground: #f5f5f0;
-  --sidebar-primary: #f5f0e8;
-  --sidebar-primary-foreground: #020202;
-  --sidebar-accent: #151515;
-  --sidebar-accent-foreground: #a8a8a0;
-  --sidebar-border: #1f1f1f;
-  --sidebar-ring: #522019;
+/* SAMA/GOL Ultra Matte Black Luxury Theme */
+--background: #020202;
+--foreground: #f5f5f0;
+
+/* Matte blacks */
+--matte-black: #0a0a0a;
+--charcoal: #111111;
+--obsidian: #080808;
+
+/* Dark mahogany palette */
+--mahogany: #3b1813;
+--mahogany-mid: #522019;
+--mahogany-light: #6a2b21;
+
+/* Cream/off-white for buttons */
+--cream: #f5f0e8;
+--cream-dark: #e8e3db;
+
+/* Smoke grays */
+--smoke: #a8a8a0;
+--smoke-dark: #6b6b65;
+
+/* Card colors */
+--card: #0d0d0d;
+--card-foreground: #f5f5f0;
+--popover: #0a0a0a;
+--popover-foreground: #f5f5f0;
+
+/* UI colors */
+--primary: #f5f0e8;
+--primary-foreground: #020202;
+--secondary: #151515;
+--secondary-foreground: #a8a8a0;
+--muted: #1a1a1a;
+--muted-foreground: #6b6b65;
+--accent: #3b1813;
+--accent-foreground: #f5f5f0;
+--destructive: #6a2b21;
+--destructive-foreground: #f5f5f0;
+--border: #1f1f1f;
+--input: #151515;
+--ring: #522019;
+
+--radius: 1.75rem;
+
+--sidebar: #0a0a0a;
+--sidebar-foreground: #f5f5f0;
+--sidebar-primary: #f5f0e8;
+--sidebar-primary-foreground: #020202;
+--sidebar-accent: #151515;
+--sidebar-accent-foreground: #a8a8a0;
+--sidebar-border: #1f1f1f;
+--sidebar-ring: #522019;
 }
 
 @theme inline {
-  --font-sans: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
-  --font-heading: 'Montserrat', 'Montserrat Fallback', system-ui, sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  
-  --radius-sm: calc(var(--radius) - 8px);
-  --radius-md: var(--radius);
-  --radius-lg: calc(var(--radius) + 4px);
-  --radius-xl: calc(var(--radius) + 8px);
-  
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-  
-  /* Custom luxury colors */
-  --color-mahogany: var(--mahogany);
-  --color-mahogany-mid: var(--mahogany-mid);
-  --color-mahogany-light: var(--mahogany-light);
-  --color-cream: var(--cream);
-  --color-cream-dark: var(--cream-dark);
-  --color-smoke: var(--smoke);
-  --color-smoke-dark: var(--smoke-dark);
-  --color-matte-black: var(--matte-black);
-  --color-charcoal: var(--charcoal);
-  --color-obsidian: var(--obsidian);
-}
+--font-sans: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
+--font-heading: 'Montserrat', 'Montserrat Fallback', system-ui, sans-serif;
+--font-mono: 'Geist Mono', 'Geist Mono Fallback';
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    background-color: var(--background);
-  }
-  
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-feature-settings: "kern" 1, "liga" 1;
-    text-rendering: optimizeLegibility;
-  }
+--color-background: var(--background);
+--color-foreground: var(--foreground);
+--color-card: var(--card);
+--color-card-foreground: var(--card-foreground);
+--color-popover: var(--popover);
+--color-popover-foreground: var(--popover-foreground);
+--color-primary: var(--primary);
+--color-primary-foreground: var(--primary-foreground);
+--color-secondary: var(--secondary);
+--color-secondary-foreground: var(--secondary-foreground);
+--color-muted: var(--muted);
+--color-muted-foreground: var(--muted-foreground);
+--color-accent: var(--accent);
+--color-accent-foreground: var(--accent-foreground);
+--color-destructive: var(--destructive);
+--color-destructive-foreground: var(--destructive-foreground);
+--color-border: var(--border);
+--color-input: var(--input);
+--color-ring: var(--ring);
 
-  /* Luxury scrollbar */
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
+--radius-sm: calc(var(--radius) - 8px);
+--radius-md: var(--radius);
+--radius-lg: calc(var(--radius) + 4px);
+--radius-xl: calc(var(--radius) + 8px);
 
-  ::-webkit-scrollbar-track {
-    background: var(--background);
-  }
+--color-sidebar: var(--sidebar);
+--color-sidebar-foreground: var(--sidebar-foreground);
+--color-sidebar-primary: var(--sidebar-primary);
+--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+--color-sidebar-accent: var(--sidebar-accent);
+--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+--color-sidebar-border: var(--sidebar-border);
+--color-sidebar-ring: var(--sidebar-ring);
 
-  ::-webkit-scrollbar-thumb {
-    background: var(--mahogany);
-    border-radius: 3px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--mahogany-mid);
-  }
-
-  /* Premium text selection */
-  ::selection {
-    background: var(--mahogany);
-    color: var(--foreground);
-  }
-}
-
-@layer utilities {
-  /* Matte texture background */
-  .bg-matte-texture {
-    background-image: 
-      url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    background-blend-mode: soft-light;
-  }
-  
-  /* Cinematic shadow */
-  .shadow-cinematic {
-    box-shadow: 
-      0 25px 50px -12px rgba(0, 0, 0, 0.8),
-      0 12px 24px -8px rgba(0, 0, 0, 0.6),
-      0 4px 8px -2px rgba(0, 0, 0, 0.4);
-  }
-  
-  /* Premium card shadow */
-  .shadow-luxury {
-    box-shadow: 
-      0 20px 40px -15px rgba(0, 0, 0, 0.7),
-      0 10px 20px -10px rgba(59, 24, 19, 0.15);
-  }
-  
-  /* Soft glow effect */
-  .glow-mahogany {
-    box-shadow: 0 0 40px rgba(59, 24, 19, 0.3);
-  }
-  
-  /* Text gradient */
-  .text-gradient-luxury {
-    background: linear-gradient(135deg, var(--foreground) 0%, var(--smoke) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
-  /* Premium button styles */
-  .btn-luxury-cream {
-    @apply bg-cream text-primary-foreground rounded-[28px] px-8 py-4 text-xs font-medium uppercase tracking-[0.2em] transition-all duration-300;
-    box-shadow: 0 4px 20px rgba(245, 240, 232, 0.15);
-  }
-  
-  .btn-luxury-cream:hover {
-    @apply bg-cream-dark;
-    box-shadow: 0 8px 30px rgba(245, 240, 232, 0.25);
-    transform: translateY(-2px);
-  }
-  
-  .btn-luxury-outline {
-    @apply border border-border bg-transparent text-foreground rounded-[28px] px-8 py-4 text-xs font-medium uppercase tracking-[0.2em] transition-all duration-300;
-  }
-  
-  .btn-luxury-outline:hover {
-    @apply border-mahogany-light bg-mahogany/10;
-  }
-  
-  /* Product card style */
-  .card-product {
-    @apply rounded-[28px] bg-card overflow-hidden transition-all duration-500;
-    box-shadow: 
-      0 15px 35px -10px rgba(0, 0, 0, 0.6),
-      0 8px 16px -6px rgba(0, 0, 0, 0.4);
-  }
-  
-  .card-product:hover {
-    box-shadow: 
-      0 25px 50px -15px rgba(0, 0, 0, 0.8),
-      0 15px 30px -10px rgba(59, 24, 19, 0.2);
-    transform: translateY(-8px);
-  }
-}
-  html,
-body {
-  background-color: #050505;
-
-  background-image:
-    linear-gradient(
-      45deg,
-      rgba(255,255,255,0.035) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255,255,255,0.035) 50%,
-      rgba(255,255,255,0.035) 75%,
-      transparent 75%,
-      transparent
-    ),
-    linear-gradient(
-      -45deg,
-      rgba(255,255,255,0.02) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255,255,255,0.02) 50%,
-      rgba(255,255,255,0.02) 75%,
-      transparent 75%,
-      transparent
-    );
-
-  background-size: 60px 60px;
-  background-position: 0 0, 30px 30px;
-}
+/* Custom luxury colors */
+--color-mahogany: var(--mahogany);
+--color-mahogany-mid: var(--mahogany-mid);
+--color-mahogany-light: var(--mahogany-light);
+--color-cream: var(--cream);
+--color-cream-dark: var(--cream-dark);
+--color-smoke: var(--smoke);
+--color-smoke-dark: var(--smoke-dark);
+--color-matte-black: var(--matte-black);
+--color-charcoal: var(--charcoal);
