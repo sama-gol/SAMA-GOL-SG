@@ -162,7 +162,7 @@ export function About() {
                   w-full
                   h-full
                   object-cover
-                  scale-[1.15]
+                  scale-[1.00]
                   select-none
                   pointer-events-none
                 "
