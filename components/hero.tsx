@@ -90,7 +90,7 @@ export function Hero() {
             CREATION
           </span>
 
-          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-light text-[#b6b6b5] mt-1">
+          <span className="block text-[clamp(2.5rem,10vw,7rem)] font-light text-[#7a1111] mt-1">
             WITHOUT
           </span>
 
@@ -103,7 +103,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="mx-auto mt-10 md:mt-14 max-w-md text-sm md:text-base font-light leading-[1.8] text-[#6b6b65] tracking-wide"
+          className="mx-auto mt-10 md:mt-14 max-w-md text-sm md:text-base font-light leading-[1.8] text-[#7a1111] tracking-wide"
           style={{ fontFamily: "var(--font-poppins)" }}
         >
           Where cinematic aesthetics meet fearless fashion.
