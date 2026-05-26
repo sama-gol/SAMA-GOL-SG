@@ -34,7 +34,7 @@ export function Navbar() {
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[#020202]/90 backdrop-blur-xl border-b border-[#1f1f1f]/50"
+            ? "bg-[#0a0a0a]/85 backdrop-blur-md border-b border-[#2a2a2a]/60 shadow-[0_0_30px_rgba(0,0,0,0.45)]"
             : "bg-transparent"
         }`}
       >
@@ -59,10 +59,11 @@ export function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="group relative text-[11px] font-medium uppercase tracking-[0.25em] text-[#a8a8a0] transition-colors duration-300 hover:text-[#7a1111]"
+                  className="group relative text-[11px] font-medium uppercase tracking-[0.25em] text-[#d6d6d0] transition-colors duration-300 hover:text-[#c12b2b]"
                 >
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#7a1111] transition-all duration-500 group-hover:w-full" />
+
+                  <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#c12b2b] transition-all duration-500 group-hover:w-full" />
                 </Link>
               ))}
             </div>
@@ -75,8 +76,11 @@ export function Navbar() {
                 className="flex flex-col items-center"
               >
                 <span
-                  className="text-lg md:text-xl font-semibold tracking-[0.35em] text-[#7a1111]"
-                  style={{ fontFamily: "var(--font-montserrat)" }}
+                  className="text-lg md:text-xl font-semibold tracking-[0.35em] text-[#b32626]"
+                  style={{
+                    fontFamily: "var(--font-montserrat)",
+                    textShadow: "0 0 18px rgba(179,38,38,0.18)",
+                  }}
                 >
                   SAMA/GOL
                 </span>
@@ -89,10 +93,11 @@ export function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="group relative text-[11px] font-medium uppercase tracking-[0.25em] text-[#a8a8a0] transition-colors duration-300 hover:text-[#7a1111]"
+                  className="group relative text-[11px] font-medium uppercase tracking-[0.25em] text-[#d6d6d0] transition-colors duration-300 hover:text-[#c12b2b]"
                 >
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#7a1111] transition-all duration-500 group-hover:w-full" />
+
+                  <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#c12b2b] transition-all duration-500 group-hover:w-full" />
                 </Link>
               ))}
             </div>
@@ -100,19 +105,19 @@ export function Navbar() {
             {/* Icons */}
             <div className="flex items-center gap-5">
               <button
-                className="text-[#a8a8a0] transition-colors duration-300 hover:text-[#7a1111] hidden md:block"
+                className="text-[#d6d6d0] transition-colors duration-300 hover:text-[#c12b2b] hidden md:block"
                 aria-label="Search"
               >
                 <Search className="h-[18px] w-[18px]" strokeWidth={1.5} />
               </button>
 
               <button
-                className="relative text-[#a8a8a0] transition-colors duration-300 hover:text-[#7a1111]"
+                className="relative text-[#d6d6d0] transition-colors duration-300 hover:text-[#c12b2b]"
                 aria-label="Shopping bag"
               >
                 <ShoppingBag className="h-[18px] w-[18px]" strokeWidth={1.5} />
 
-                <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#3b1813] text-[9px] font-medium text-[#f5f5f0]">
+                <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#c12b2b] text-[9px] font-medium text-[#f5f5f0]">
                   0
                 </span>
               </button>
@@ -129,7 +134,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className="fixed inset-0 z-40 bg-[#020202]"
+            className="fixed inset-0 z-40 bg-[#0a0a0a]/95 backdrop-blur-md"
           >
             <div className="flex h-full flex-col items-center justify-center">
               <div className="flex flex-col items-center gap-10">
@@ -146,8 +151,11 @@ export function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-3xl md:text-5xl font-light tracking-[0.2em] text-[#7a1111]"
-                      style={{ fontFamily: "var(--font-montserrat)" }}
+                      className="text-3xl md:text-5xl font-light tracking-[0.2em] text-[#d63a3a]"
+                      style={{
+                        fontFamily: "var(--font-montserrat)",
+                        textShadow: "0 0 25px rgba(214,58,58,0.12)",
+                      }}
                     >
                       {link.name}
                     </Link>
@@ -157,7 +165,7 @@ export function Navbar() {
 
               {/* Bottom Contact */}
               <div
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] font-light tracking-[0.3em] text-[#7a1111]"
+                className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] font-light tracking-[0.3em] text-[#d6d6d0]"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 CONTACT@SAMAGOL.COM
