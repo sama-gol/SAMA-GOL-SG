@@ -175,28 +175,25 @@ export function About() {
               {/* Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
 
-                {/* Extra glow */}
+                {/* Extra glow behind logo */}
                 <div
-                  className="absolute w-[280px] h-[280px] rounded-full opacity-50"
+                  className="absolute w-[380px] h-[380px] rounded-full opacity-60"
                   style={{
                     background:
-                      "radial-gradient(circle, rgba(255,40,40,0.28) 0%, transparent 70%)",
-                    filter: "blur(70px)",
+                      "radial-gradient(circle, rgba(255,40,40,0.30) 0%, transparent 70%)",
+                    filter: "blur(90px)",
                   }}
                 />
 
                 <img
-                  src="./sg-logo.png"
+                  src="/sg-logo.png"
                   alt="SAMA/GOL Logo"
                   className="
                     relative z-10
-                    w-[230px]
-                    md:w-[300px]
-                    lg:w-[360px]
+                    w-[85%]
+                    h-[85%]
                     object-contain
-                    select-none
-                    pointer-events-none
-                    drop-shadow-[0_0_45px_rgba(255,50,50,0.22)]
+                    drop-shadow-[0_0_60px_rgba(255,50,50,0.30)]
                   "
                 />
               </div>
